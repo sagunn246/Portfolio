@@ -45,7 +45,7 @@ export const Projects = () => {
                 description:
                   "FoodliesHub — Order fresh meals and groceries online with quick delivery and secure payments. Feel free to order from here.",
                 tech: ["React", "Node.js", "Tailwind", "MongoDB"],
-                github: "https://github.com/sagunn246/Website",
+                github: "https://github.com/sagunn246/Client",
                 preview: "https://hungryforfood.netlify.app/",
               },
             ].map((project, index) => (
