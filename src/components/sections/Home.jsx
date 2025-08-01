@@ -4,11 +4,16 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-[100dvh] w-full flex flex-col items-center justify-start 
-                 pt-20 sm:pt-28 md:pt-36 bg-black px-4 overflow-x-hidden"
+      className="
+        min-h-[100dvh] w-full flex flex-col items-center 
+        justify-center md:justify-start
+        pt-0 md:pt-36 lg:pt-40
+        bg-black px-4 overflow-x-hidden
+      "
     >
       <RevealOnScroll>
         <div className="text-center z-10 w-full max-w-3xl px-2">
+          {/* Profile Image */}
           <div className="mb-6 sm:mb-8">
             <img
               src="Photo.png"
@@ -19,18 +24,20 @@ export const Home = () => {
             />
           </div>
 
+          {/* Heading */}
           <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
-                         font-bold mb-4 sm:mb-6 
-                         bg-gradient-to-r from-blue-500 to-cyan-400 
-                         bg-clip-text text-transparent"
+                       font-bold mb-4 sm:mb-6 
+                       bg-gradient-to-r from-blue-500 to-cyan-400 
+                       bg-clip-text text-transparent"
           >
             Hi, I'm Sagun Ghimire
           </h1>
 
+          {/* Description */}
           <p
             className="text-gray-400 text-sm sm:text-base md:text-lg 
-                        mb-6 sm:mb-8 px-2 sm:px-4 leading-relaxed"
+                       mb-6 sm:mb-8 px-2 sm:px-4 leading-relaxed"
           >
             I'm a beginner web developer with a passion for building modern and
             responsive websites. I work with React.js, HTML, CSS, and
@@ -39,6 +46,7 @@ export const Home = () => {
             developer.
           </p>
 
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a
               href="#projects"
