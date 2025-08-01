@@ -55,7 +55,7 @@ export const Projects = () => {
                            hover:scale-[1.03] hover:rotate-[0.5deg] transition-transform duration-300 
                            hover:border-blue-500/30 hover:shadow-[0_2px_20px_rgba(59,130,246,0.2)]
                            before:absolute before:inset-0 before:rounded-xl before:border-2 before:border-transparent 
-                           before:group-hover:border-blue-500/20 before:transition-all before:duration-500"
+                           before:group-hover:border-blue-500/20 before:transition-all before:duration-500 before:pointer-events-none"
               >
                 <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition">
                   {project.title}
