@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background: #0a0a0a;
+    color: #f3f4f6;
+}
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 1s steps(2, start) infinite;
+  }
+
+  .animate-loading-bar {
+    animation: loading-bar 2s linear infinite;
+  }
+
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  @keyframes loading-bar {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(300%);
+    }
+  }
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
