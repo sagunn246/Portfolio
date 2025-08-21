@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="
+      className="  
         min-h-screen w-full flex justify-center items-center
         px-4 py-10 md:py-16 bg-black overflow-x-hidden
       "
